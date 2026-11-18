@@ -1,0 +1,23 @@
+[project]
+name = "sign-language"
+version = "0.1.0"
+description = "Real-time ASL word recognition: MediaPipe landmarks + a GRU, trained on WLASL100"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.5",
+    "numpy>=2.0",
+    "mediapipe>=0.10.14",
+    "opencv-python>=4.10",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

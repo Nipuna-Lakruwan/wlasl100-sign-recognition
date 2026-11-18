@@ -1,0 +1,80 @@
+{
+ "gru_s0": {
+  "top1": 0.7,
+  "top5": 0.88
+ },
+ "gru_s1": {
+  "top1": 0.74,
+  "top5": 0.9
+ },
+ "gru_s2": {
+  "top1": 0.75,
+  "top5": 0.89
+ },
+ "gru_s0_noaug": {
+  "top1": 0.68,
+  "top5": 0.88
+ },
+ "headline_ensemble": {
+  "top1": 0.75,
+  "top5": 0.9,
+  "top10": 0.93,
+  "top1_95ci": [
+   0.657,
+   0.825
+  ]
+ },
+ "gru_s0_signer": {
+  "top1": 0.63,
+  "top5": 0.859
+ },
+ "gru_s1_signer": {
+  "top1": 0.63,
+  "top5": 0.815
+ },
+ "gru_s2_signer": {
+  "top1": 0.707,
+  "top5": 0.804
+ },
+ "signer_independent_ensemble": {
+  "top1": 0.674,
+  "top1_95ci": [
+   0.573,
+   0.761
+  ],
+  "top5": 0.837,
+  "top10": 0.902,
+  "test_clips": 92,
+  "test_signers": 16,
+  "words_with_test_clips": 61
+ },
+ "by_signer": {
+  "signer_also_in_train": {
+   "clips": 97,
+   "top1": 0.753
+  },
+  "new_signer": {
+   "clips": 3,
+   "top1": 0.667
+  }
+ },
+ "most_common_confusions": [
+  "before -> pull (x1)",
+  "candy -> hearing (x1)",
+  "fine -> last (x1)",
+  "thin -> full (x1)",
+  "thin -> wrong (x1)",
+  "walk -> dance (x1)",
+  "cool -> fine (x1)",
+  "finish -> dog (x1)",
+  "like -> white (x1)",
+  "like -> same (x1)"
+ ],
+ "test_clips": 100,
+ "words_with_test_clips": 72,
+ "chance_top1": 0.01,
+ "hand_visible_fraction": {
+  "correct": 0.885,
+  "wrong": 0.884
+ }
+}
